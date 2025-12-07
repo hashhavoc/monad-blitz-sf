@@ -1,0 +1,22 @@
+[project]
+name = "fallbackai"
+version = "0.1.0"
+description = "FALLBACKAI - A FastAPI server to broadcast messages over Meshtastic via serial port"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "meshtastic>=1.2.0",
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.uv]
+dev-dependencies = []
+
